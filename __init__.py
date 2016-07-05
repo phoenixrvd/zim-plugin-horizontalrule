@@ -24,12 +24,6 @@ class MainWindowExtension(WindowExtension):
         </ui>
     '''
 
-    def __init__(self, plugin, window):
-        WindowExtension.__init__(self, plugin, window)
-
-        # Define the bugtracker object as global, for the performance purpose
-        plugin.bt = Mantis()
-
     @action(
             _('Horizontal Rule'),
             readonly=True,
